@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F7FDFC;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    margin-top:80px;
+}
+
+
+.col1{
+    width: 30%;
+    float: left;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.col2{
+    width: 70%;
+    float:right;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .container{
+        margin-top: 0px;
+    }
+   .col1 {
+      width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+   .col2{
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+   }
+
+   .introHeading{
+    margin-top: 0;
+   }
+
+    .formRow{
+    display: flex;
+    flex-direction: column !important;
+    width: 100%;
+   } 
+   .formField{
+    width: 100%;
+   }
+
+  }
+
+.introHeading{
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 10px;
+    line-height: 50px;
+}
+
+.introText{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+/* .formField.input2{
+    margin-left: 30px ;
+} */
+input{
+    outline: none;
+    border: 1px solid #efefef;
+    height: 48px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+select{
+    outline: none;
+    border: 1px solid #efefef;
+    height: 48px; 
+    width: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+input:focus{
+    outline: none;
+    border: 1px solid #2ec4b6;
+    box-sizing: border-box;
+}
+
+label{
+     font-weight: 600;
+     text-transform: capitalize;
+     font-size: 14px;
+}
+
+
+.formRow{
+    display: flex;
+    flex-direction: row;
+}
+
+.formField{
+    width: 100%;
+    margin-right: 30px;;
+}
+
+.formContainer{
+    background-color: #fff !important;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid #fff;
+    border-radius: 10px;
+    
+}
+
+.formInput{
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+
+.buttonContainer{
+    width: 70%;
+    margin: auto;
+
+}
+
+.formButton{
+    background-color: #2ec4b6;
+    padding: 20px;
+	cursor: pointer;
+	outline: inherit;
+    appearance: none;
+    width: 100%;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+a{
+    text-decoration: none;
+    color:#2ec4b6;
+}
+p{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 25px;
+    padding:0 30px 0 30px;
+    text-align: center;
+}
